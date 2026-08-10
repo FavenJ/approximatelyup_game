@@ -1,0 +1,39 @@
+---
+title: "Approximately Up Ship Building"
+badge: "Building"
+subtitle: "Frames, power, thrusters, and cockpit controls that actually leave the pad."
+metaTitle: "Approximately Up Ship Building — Frames, Power & Thrusters"
+metaDescription: "Approximately Up ship building basics: lay a rigid frame, route power from battery through a router, mount electric lifting thrusters, and wire a joystick."
+---
+
+**Ship construction is the heart of Approximately Up: frame blocks, a battery, a power router, electric lifting thrusters, and a joystick are the minimum viable stack for leaving the pad.** Your first ship does not need to look good — it needs to lift off, respond to inputs, and survive long enough for you to learn.
+
+## Step 1: Lay a rigid frame
+
+Start with frame blocks on flat ground near headquarters. A simple rectangular footprint, roughly 3×3 or 4×4, gives you mounting points for thrusters and a seat. Avoid tall, narrow towers early — a high center of mass tips over during takeoff.
+
+If you plan package missions later, add a small gate or cargo opening now. Standard lost-shipment crates fit 1.2×1.2×1.2 meters. Use **Ctrl+G box-select** to move the whole frame if you misaligned it, and press **H** for debug info when parts refuse to connect.
+
+## Step 2: Power generation and routing
+
+Every powered component needs a path from a battery through a power router. Place at least one battery — or a generator if you have unlocked one — and connect it to a router input, then branch outputs to your thrusters, the RCS controller, and cockpit instruments.
+
+The rule of thumb: **thick power cables for electricity, data cables for signals**. Most first-build failures are wiring failures — thrusters plugged into data ports, or a router overloaded because nothing was branched.
+
+## Step 3: Mount lifting thrusters
+
+Attach electric thrusters pointing downward for an Earth takeoff. Four corners give balanced lift, and more thrusters share load and add redundancy. Connect each thruster's power port to the router.
+
+For control, run a data cable from a 2D joystick or vertical throttle to the thruster data input. The game auto-maps familiar pairings, so a throttle-to-thruster link often works with a single data cable.
+
+## Step 4: Cockpit and seat
+
+Place a seat where you can reach the joystick and switches. After entering fly mode with **R**, click the throttle or joystick to focus it, then use WASD or mouse input. **Mouse 3** resets stuck controls — use it before every panic rebuild.
+
+A kill switch on a small data branch is optional but recommended. Cutting main thrust quickly turns many bad landings into survivable ones.
+
+## Step 5: Rotation and testing
+
+A vertical-only template will not rotate well. Before any Moon attempt, install six RCS thrusters and one RCS controller — two opposing thrusters per axis, with each knob set to pitch, yaw, or roll A/B.
+
+Then test: verify all power links in garage mode, hold R and listen for loose parts, throttle up slowly, and cut thrust to check a controllable descent. First flights end in crashes — that is expected. Change one variable per rebuild.

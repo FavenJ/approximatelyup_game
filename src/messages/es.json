@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "siteName": "Wiki de Approximately Up",
+    "siteTitle": "Wiki de Approximately Up — Construcción de naves, guía espacial",
+    "siteDescription": "Explora la wiki de Approximately Up con guías de construcción de naves espaciales, misiones, componentes, consejos de exploración y estrategias multijugador para sobrevivir en el espacio.",
+    "keywords": "Approximately Up, wiki de Approximately Up, construcción de naves, guía espacial, componentes de nave, misiones, exploración, estrategias multijugador"
+  },
+  "nav": {
+    "beginnerGuide": "Guía para principiantes",
+    "shipBuilds": "Construcción de naves",
+    "missions": "Misiones",
+    "multiplayer": "Multijugador",
+    "guide": "Guía",
+    "getOnSteam": "Conseguir en Steam",
+    "buyOnSteam": "Comprar en Steam"
+  },
+  "footer": {
+    "tagline": "Wiki comunitaria de Approximately Up — guías de construcción de naves, misiones, consejos de exploración y estrategias multijugador.",
+    "disclaimer": "No afiliada a Approximately Games. Todo el contenido del juego pertenece a sus respectivos propietarios.",
+    "guides": "Guías",
+    "community": "Comunidad",
+    "viewOnSteam": "Ver en Steam",
+    "copyright": "© 2026 Wiki de Approximately Up — Sitio de fans. No oficial.",
+    "credit": "Approximately Up es desarrollado por Approximately Games y publicado en Steam.",
+    "discord": "Discord",
+    "youtube": "YouTube",
+    "reddit": "Reddit",
+    "steamCommunity": "Comunidad de Steam",
+    "tbc": "Por confirmar",
+    "links": {
+      "beginnerGuide": "Guía para principiantes",
+      "shipBuilds": "Construcción de naves y componentes",
+      "missions": "Exploración y misiones",
+      "multiplayer": "Estrategias multijugador avanzadas",
+      "legal": "Aviso legal"
+    }
+  },
+  "home": {
+    "heroEyebrow": "Wiki comunitaria hecha por fans",
+    "heroTitle": "Approximately Up",
+    "heroDescription": "Approximately Up es una aventura creativa de simulación espacial donde los jugadores construyen naves modulares, exploran planetas desconocidos y sobreviven misiones caóticas con amigos.",
+    "heroStats": [
+      "Lanzado en ago 2026",
+      "Última actualización ago 2026",
+      "Cooperativo de 4 jugadores",
+      "Miles de componentes de nave",
+      "Exploración espacial procedural"
+    ],
+    "heroPrimary": "Empezar la guía para principiantes",
+    "heroTertiary": "Ver las últimas novedades",
+    "heroGuides": "Explorar todas las guías",
+    "videoLabel": "Medios oficiales",
+    "startEyebrow": "Empieza aquí",
+    "startTitle": "Tu viaje en Approximately Up",
+    "startCards": [
+      { "number": "1", "title": "Guía para principiantes", "description": "Desde construir tu primera nave y los controles básicos hasta completar tu primera misión: la guía completa para empezar.", "href": "/beginner-guide" },
+      { "number": "2", "title": "Construcción de naves y componentes", "description": "Construcción modular de naves, selección de piezas, sistemas de propulsión y diseños prácticos.", "href": "/ship-building" },
+      { "number": "3", "title": "Exploración y misiones", "description": "Exploración de planetas, desarrollo de misiones, recolección de recursos y entornos peligrosos.", "href": "/missions" },
+      { "number": "4", "title": "Estrategias multijugador avanzadas", "description": "Juego cooperativo, sistemas de automatización e ingeniería avanzada de naves espaciales.", "href": "/multiplayer" }
+    ],
+    "aboutTitle": "¿Qué es Approximately Up?",
+    "aboutP1": "Approximately Up es un juego de aventura y simulación espacial centrado en la construcción creativa de naves y la exploración. Con componentes modulares, los jugadores pueden construir desde naves fiables hasta caóticas máquinas voladoras.",
+    "aboutP2": "El juego combina creatividad de ingeniería, exploración, cooperación multijugador y desafíos de misiones. Los jugadores pueden ampliar sus naves continuamente, descubrir nuevas posibilidades y crear experiencias espaciales únicas.",
+    "aboutStats": [
+      { "label": "Desarrollador", "value": "Approximately Games" },
+      { "label": "Plataforma", "value": "Steam PC" },
+      { "label": "Género", "value": "Aventura de simulación espacial" },
+      { "label": "Jugadores", "value": "Cooperativo hasta 4 jugadores" },
+      { "label": "Sistema de naves", "value": "Construcción modular" },
+      { "label": "Contenido principal", "value": "Miles de componentes" },
+      { "label": "Lanzamiento", "value": "Agosto de 2026" }
+    ],
+    "aboutCta": "Explorar todas las guías",
+    "finalTitle": "¿Listo para dominar Approximately Up?",
+    "finalDescription": "Desde el primer fuselaje de tu nave hasta misiones multijugador complejas, nuestra wiki comunitaria te ayuda a construir mejores naves y explorar el espacio profundo.",
+    "finalPrimary": "Leer la guía para principiantes",
+    "finalSecondary": "Jugar en Steam"
+  },
+  "guide": {
+    "breadcrumbHome": "Inicio",
+    "breadcrumbCurrent": "Guía",
+    "badge": "Centro de guías",
+    "metaTitle": "Guía de Approximately Up — Todos los tutoriales en un lugar",
+    "metaDescription": "El centro de guías de Approximately Up: construcción de tu primera nave, propulsores RCS, cableado de energía, alunizaje, misiones y cooperativo en línea.",
+    "title": "Guías de Approximately Up",
+    "subtitle": "Desde tu primera construcción en el garaje hasta las entregas en Moonstep: todos los tutoriales en un solo lugar.",
+    "intro": "Bienvenido al centro de guías de Approximately Up. Esta simulación espacial de Steam te permite armar naves modulares, cablear circuitos lógicos y volar a la Luna con hasta cuatro amigos en cooperativo en línea. La demo ya está disponible y el lanzamiento completo está previsto para agosto de 2026.",
+    "openGuide": "Abrir guía ->",
+    "availableBadge": "Disponible",
+    "tbcBadge": "Por confirmar",
+    "tbcNote": "Las páginas detalladas están en preparación. El contenido marcado como por confirmar se completará cuando se verifique la información oficial."
+  },
+  "legal": {
+    "breadcrumbCurrent": "Legal",
+    "badge": "Legal",
+    "title": "Aviso legal y descargo de responsabilidad",
+    "subtitle": "Transparencia sobre lo que es esta wiki hecha por fans — y lo que no es.",
+    "sections": [
+      {
+        "h": "Sitio de fans no oficial",
+        "p": "Este sitio web es una wiki comunitaria no oficial de Approximately Up, creada por fans. No está afiliada, respaldada ni vinculada a Approximately Games."
+      },
+      {
+        "h": "Marcas y contenido del juego",
+        "p": "Approximately Up y todos los nombres, recursos y contenidos relacionados pertenecen a sus respectivos propietarios. Aquí se mencionan únicamente con fines informativos."
+      },
+      {
+        "h": "Exactitud de la información",
+        "p": "Toda la información de esta wiki procede de fuentes oficiales públicas. Las entradas marcadas como por confirmar aún no se han verificado y se actualizarán cuando se publiquen los detalles oficiales."
+      },
+      {
+        "h": "Contacto",
+        "p": "Información de contacto: por confirmar."
+      }
+    ]
+  },
+  "article": {
+    "breadcrumbHome": "Inicio",
+    "metaTbc": "Contenido en verificación"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "text": "Esta guía aún no se ha escrito. Se añadirá cuando se confirme la información oficial.",
+    "back": "Volver al inicio"
+  }
+}

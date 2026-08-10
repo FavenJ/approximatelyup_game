@@ -1,0 +1,33 @@
+---
+title: "Approximately Up Battery Gauge"
+badge: "Systems"
+subtitle: "Power monitoring, RCS indicator lights, and planning battery life for long flights."
+metaTitle: "Approximately Up Battery Gauge — Power Monitoring Guide"
+metaDescription: "Approximately Up power monitoring: watch RCS controller lights (green, yellow, red), plan battery life for long coasts, and never starve the controller."
+---
+
+**Power management in Approximately Up is about monitoring draw and respecting the RCS controller's indicator lights: green means continue, yellow means sparing use, red or blinking means replace that thruster at the next garage stop.** A dedicated battery gauge UI element is **to be confirmed** — here is what is confirmed about tracking power.
+
+## What is confirmed about power monitoring
+
+Every powered component draws from a battery through a power router, and total draw matters. Monitoring power draw during maneuvers is confirmed practice — starving the RCS controller mid-pitch is a documented way to lose attitude control at the worst moment.
+
+The RCS controller exposes its own status through indicator lights. Check them during long burns and before committing to maneuvers that need full rotation authority.
+
+## Reading the indicator lights
+
+- **Green** — the system is healthy; continue flying normally
+- **Yellow** — power is marginal; plan sparing RCS use and avoid waste
+- **Red or blinking** — a thruster needs replacement at the next garage stop, or you adapt the approach using main engines only
+
+Treat yellow as a planning signal, not an emergency. Red on a critical axis mid-flight means flying the rest of the trip with asymmetric rotation.
+
+## Planning battery life for long flights
+
+On longer trips — the lunar coast is the confirmed example — plan fuel and RCS battery life for the entire journey, not just the ascent. Depleted RCS on one axis mid-flight leaves you with lopsided rotation until you can garage-stop.
+
+Give the RCS controller its own small power branch from the router. It draws little, but sharing a line with heavy lifting thrusters can cut it exactly when you need attitude control.
+
+## What is not confirmed
+
+Whether the game shows a numeric battery gauge, percentage readout, or per-battery charge UI is **to be confirmed**. Battery capacities, generator output values, and charge rates are likewise unverified. This page will be updated when official instrument documentation is available.

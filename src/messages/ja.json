@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "siteName": "Approximately Up Wiki 日本語",
+    "siteTitle": "Approximately Up Wiki — 宇宙船建造・スペースガイド",
+    "siteDescription": "Approximately Up Wiki では、宇宙船建造ガイド、ミッション、コンポーネント、探索のコツ、宇宙サバイバルのマルチプレイ戦略を紹介します。",
+    "keywords": "Approximately Up, Approximately Up Wiki, 宇宙船建造, スペースガイド, 船のコンポーネント, ミッション, 探索, マルチプレイ戦略"
+  },
+  "nav": {
+    "beginnerGuide": "初心者ガイド",
+    "shipBuilds": "宇宙船建造",
+    "missions": "ミッション",
+    "multiplayer": "マルチプレイ",
+    "guide": "ガイド",
+    "getOnSteam": "Steam で入手",
+    "buyOnSteam": "Steam で購入"
+  },
+  "footer": {
+    "tagline": "Approximately Up のファン製コミュニティ Wiki — 宇宙船建造ガイド、ミッション、探索のコツ、マルチプレイ戦略。",
+    "disclaimer": "Approximately Games とは提携していません。ゲームコンテンツはそれぞれの権利者に帰属します。",
+    "guides": "ガイド",
+    "community": "コミュニティ",
+    "viewOnSteam": "Steam で見る",
+    "copyright": "© 2026 Approximately Up Wiki — ファンサイト。非公式。",
+    "credit": "Approximately Up は Approximately Games が開発し、Steam で配信されています。",
+    "discord": "Discord",
+    "youtube": "YouTube",
+    "reddit": "Reddit",
+    "steamCommunity": "Steam コミュニティ",
+    "tbc": "確認待ち",
+    "links": {
+      "beginnerGuide": "初心者ガイド",
+      "shipBuilds": "宇宙船建造とコンポーネント",
+      "missions": "探索とミッション",
+      "multiplayer": "上級マルチプレイ戦略",
+      "legal": "法務・免責事項"
+    }
+  },
+  "home": {
+    "heroEyebrow": "ファン製コミュニティ Wiki",
+    "heroTitle": "Approximately Up",
+    "heroDescription": "Approximately Up は、モジュール式の宇宙船を建造し、未知の惑星を探索し、フレンドとカオスなミッションを生き抜く、創造的な宇宙シミュレーションアドベンチャーです。",
+    "heroStats": [
+      "2026年8月リリース",
+      "最新アップデート 2026年8月",
+      "4人協力プレイ",
+      "数千種類の船のコンポーネント",
+      "自動生成の宇宙探索"
+    ],
+    "heroPrimary": "初心者ガイドを始める",
+    "heroTertiary": "最新アップデートを確認",
+    "heroGuides": "すべてのガイドを見る",
+    "videoLabel": "公式メディア",
+    "startEyebrow": "ここから始める",
+    "startTitle": "あなたの Approximately Up の旅",
+    "startCards": [
+      { "number": "1", "title": "初心者ガイド", "description": "初めての宇宙船建造、基本操作から初ミッションの達成まで——初心者向け完全攻略。", "href": "/beginner-guide" },
+      { "number": "2", "title": "宇宙船建造とコンポーネント", "description": "モジュール式宇宙船の建造、パーツ選び、動力システム、実用的な設計を紹介。", "href": "/ship-building" },
+      { "number": "3", "title": "探索とミッション", "description": "惑星探索、ミッションの流れ、資源収集、危険な環境への対処方法を解説。", "href": "/missions" },
+      { "number": "4", "title": "上級マルチプレイ戦略", "description": "協力プレイ、自動化システム、高度な宇宙船エンジニアリングのテクニックを共有。", "href": "/multiplayer" }
+    ],
+    "aboutTitle": "Approximately Up とは？",
+    "aboutP1": "Approximately Up は、創造的な宇宙船建造と探索に焦点を当てた宇宙シミュレーションアドベンチャーです。モジュール式コンポーネントを使って、信頼性の高い宇宙船からカオスな飛行機械まで、あらゆるものを建造できます。",
+    "aboutP2": "このゲームは、エンジニアリングの創造性、探索、マルチプレイ協力、ミッションチャレンジを組み合わせています。船を拡張し続け、新しい可能性を発見し、独自の宇宙体験を作り出すことができます。",
+    "aboutStats": [
+      { "label": "開発元", "value": "Approximately Games" },
+      { "label": "プラットフォーム", "value": "Steam PC" },
+      { "label": "ジャンル", "value": "宇宙シミュレーションアドベンチャー" },
+      { "label": "プレイ人数", "value": "最大4人協力プレイ" },
+      { "label": "船システム", "value": "モジュール式建造" },
+      { "label": "コアコンテンツ", "value": "数千種類のコンポーネント" },
+      { "label": "リリース", "value": "2026年8月" }
+    ],
+    "aboutCta": "すべてのガイドを見る",
+    "finalTitle": "Approximately Up を極める準備はできましたか？",
+    "finalDescription": "初めての船体フレームから複雑なマルチプレイミッションまで、コミュニティ Wiki がより良い船作りとより深い宇宙探索をお手伝いします。",
+    "finalPrimary": "初心者ガイドを読む",
+    "finalSecondary": "Steam でプレイ"
+  },
+  "guide": {
+    "breadcrumbHome": "ホーム",
+    "breadcrumbCurrent": "ガイド",
+    "badge": "ガイドハブ",
+    "metaTitle": "Approximately Up ガイド — 全チュートリアル一覧",
+    "metaDescription": "Approximately Up ガイドの総合ハブ：初めての宇宙船建造、RCS スラスター設定、電源配線、月面着陸、ミッション、オンライン協力プレイまで。",
+    "title": "Approximately Up ガイド",
+    "subtitle": "初めてのガレージ建造から Moonstep への配達まで——すべてのチュートリアルをここに。",
+    "intro": "Approximately Up ガイドハブへようこそ。この Steam 宇宙シムでは、モジュール式の船を組み立て、論理回路を配線し、最大4人のフレンドとオンライン協力で月を目指します。デモは現在公開中で、正式リリースは2026年8月予定です。",
+    "openGuide": "ガイドを開く ->",
+    "availableBadge": "公開中",
+    "tbcBadge": "確認待ち",
+    "tbcNote": "詳細ページは作成中です。「確認待ち」のコンテンツは、公式情報が検証され次第追加されます。"
+  },
+  "legal": {
+    "breadcrumbCurrent": "法務",
+    "badge": "法務",
+    "title": "法務・免責事項",
+    "subtitle": "このファン製 Wiki が何であり、何でないかについての透明な情報。",
+    "sections": [
+      {
+        "h": "非公式ファンサイト",
+        "p": "本サイトは Approximately Up の非公式ファン製コミュニティ Wiki です。Approximately Games とは一切提携しておらず、同社による支持・承認も受けていません。"
+      },
+      {
+        "h": "商標・ゲームコンテンツ",
+        "p": "Approximately Up および関連する名称・アセット・ゲームコンテンツは、それぞれの権利者に帰属します。本サイトでは情報提供のみを目的として言及しています。"
+      },
+      {
+        "h": "情報の正確性",
+        "p": "本 Wiki のすべての情報は、公開されている公式情報源に基づいています。「確認待ち」の項目は未検証であり、公式情報が公開され次第更新されます。"
+      },
+      {
+        "h": "連絡先",
+        "p": "連絡先情報：確認待ち。"
+      }
+    ]
+  },
+  "article": {
+    "breadcrumbHome": "ホーム",
+    "metaTbc": "コンテンツ確認中"
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "text": "このガイドページはまだ作成されていません。公式情報が確認され次第追加されます。",
+    "back": "ホームに戻る"
+  }
+}

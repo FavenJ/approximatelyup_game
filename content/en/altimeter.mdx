@@ -1,0 +1,31 @@
+---
+title: "Approximately Up Altimeter"
+badge: "To be confirmed"
+subtitle: "Altitude instruments: what is confirmed, what is not, and what to use instead."
+metaTitle: "Approximately Up Altimeter — Altitude Tools Explained"
+metaDescription: "Is there an altimeter in Approximately Up? A dedicated altimeter part is not confirmed — but the velocity meter and radar cover altitude work. Details here."
+---
+
+**A dedicated altimeter instrument in Approximately Up is not confirmed.** No official part list or instrument documentation we have verified includes one. What is confirmed: the velocity meter and the radar system cover most of what you need altitude data for.
+
+## What is confirmed
+
+The **velocity meter** is a confirmed instrument component. It measures your vertical (and general) velocity and feeds hover logic circuits — it is the core sensor of the automatic altitude-hold setup described in the velocity meter guide.
+
+The **radar** is also confirmed. It tracks targets and switches from Earth-relative to Moon-relative targeting as you enter lunar influence, which is how you navigate during transfers and approaches.
+
+## Why altitude matters in this game
+
+Low-altitude flight is where thruster choice changes. The Moon has a thin atmosphere, so atmospheric thrusters work best low and slow near the surface, while electric thrusters handle vacuum and high-altitude burns.
+
+Knowing when you are "low enough" for atmospheric thrusters is a real gameplay need — the guidance so far is to stay somewhat low on approach and test the threshold in the demo. Whether a numeric altitude readout exists for this is **to be confirmed**.
+
+## The hover alternative
+
+If your goal is holding a steady altitude rather than reading one, hover logic circuits solve it without any altimeter. A PD controller built from a velocity meter, accumulator, remapper, and multiplier holds altitude automatically.
+
+That setup pairs with the in-game Thrust Calculator when tuning hover thrust against total mass. It is the confirmed, working approach to altitude control in the demo.
+
+## What is not confirmed
+
+The existence, name, and unlock path of any altimeter part are **to be confirmed**. Full-release instrument lists may change this — the August 2026 release adds more content, and this page will be updated as official part data is verified.

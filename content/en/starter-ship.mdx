@@ -1,0 +1,38 @@
+---
+title: "Approximately Up Starter Ship"
+badge: "Building"
+subtitle: "The minimal viable flyer: exactly what to bolt together for your first liftoff."
+metaTitle: "Approximately Up Starter Ship — Minimal Flyer Checklist"
+metaDescription: "The confirmed Approximately Up starter ship recipe: a 3×3 frame, battery, power router, four lifting thrusters, a joystick and a seat — nothing more needed."
+---
+
+**A working Approximately Up starter ship needs exactly six things: frame blocks, a battery, a power router, electric lifting thrusters, a joystick or throttle, and a seat.** Skip everything else — fancy logic can wait until you can lift off and land without exploding.
+
+## The checklist
+
+Build on flat ground near headquarters and work through this order:
+
+1. **Frame** — a rectangular 3×3 or 4×4 footprint, not a tower
+2. **Battery** — at least one, or a generator if unlocked
+3. **Power router** — battery connects to the input, branches feed everything else
+4. **Lifting thrusters** — electric, pointing down, one per corner
+5. **Joystick or throttle** — linked to the thrusters with a data cable
+6. **Seat** — placed so you can reach the controls
+
+Power flows battery → router → thrusters. Control flows joystick → data cable → thruster data input. If either path is broken, the ship stays on the pad.
+
+## Design rules for first ships
+
+Keep it flat and wide. Tall, narrow builds have a high center of mass and tip over during takeoff. Four corner thrusters give balanced lift, and extra thrusters buy redundancy when one fails.
+
+If package missions are your goal, leave a gate or cargo opening in the frame. Standard lost-shipment crates measure 1.2×1.2×1.2 meters, so a slightly larger opening saves a rebuild later.
+
+## Common first-ship mistakes
+
+Thrusters wired to data ports instead of power is the classic failure. Second place goes to an unbranched router trying to feed everything at once. Check wiring with **H** debug info in garage mode before assuming a part is broken.
+
+Under-thrusted ships hover at full lever and still sink; over-thrusted ships bounce on the pad. The in-game Thrust Calculator compares total thrust against mass — use it before blaming the physics.
+
+## What to add next
+
+Once the starter ship lifts and lands reliably, the next upgrade is rotation: six RCS thrusters plus one RCS controller, two opposing jets per axis. After that, hover logic circuits can hold altitude for you hands-free. Both are covered in their own guides on this wiki.

@@ -1,0 +1,33 @@
+---
+title: "Approximately Up Connect Cables"
+badge: "Systems"
+subtitle: "Power versus data: how routing works and the mistakes that kill first ships."
+metaTitle: "Approximately Up Connect Cables — Power & Data Routing"
+metaDescription: "How to connect cables in Approximately Up: thick power cables from battery to router to thrusters, data cables from joysticks to inputs, plus mistakes to avoid."
+---
+
+**Approximately Up has two cable types, and mixing them up is the number one beginner failure: thick power cables carry electricity, and data cables carry control signals.** Every powered part needs a path from a battery through a power router, and every control needs a data link to what it drives.
+
+## The power path
+
+Power flows in one direction: battery (or generator, once unlocked) → power router input → branched router outputs → each powered component. Nothing reaches a thruster directly from a battery.
+
+Branch your router outputs deliberately. Lifting thrusters, the RCS controller, and cockpit instruments should each have their own branch, so one overloaded line cannot starve the whole ship.
+
+## The data path
+
+Data cables connect controls to the components they drive. Run a data cable from a 2D joystick or throttle to a thruster's data input, and the game auto-maps familiar pairings — throttle-to-thruster often works with a single link.
+
+The RCS system is the exception that confuses people: RCS thrusters pair with their controller **wirelessly**. You only wire power to the RCS controller and data from a 3D joystick — no per-thruster cables.
+
+## The three classic mistakes
+
+First: thrusters plugged into data ports. They look connected but receive no power, so nothing fires. Second: an unbranched router feeding everything at once, which overloads and browns out the ship under load.
+
+Third: mixing the two cable types mid-run. If a connection looks right but nothing works, press **H** in garage mode and read the debug info — it shows which links are actually connected.
+
+## Checking your work
+
+Before every flight, walk the ship in garage mode and verify each link. Power links should show connected from router to component, and each joystick should trace to its target.
+
+If thrust does not respond in a test, fix wiring before touching the frame. Confirmed experience from the tutorial flow: most "broken" ships are miswired ships.

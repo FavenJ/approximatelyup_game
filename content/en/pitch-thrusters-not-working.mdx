@@ -1,0 +1,37 @@
+---
+title: "Approximately Up Pitch Thrusters Not Working"
+badge: "Fix"
+subtitle: "Why your ship will not pitch — RCS setup, knob assignment, and wiring checks."
+metaTitle: "Approximately Up Pitch Thrusters Not Working — Fixes"
+metaDescription: "Approximately Up pitch thrusters not working? You need six RCS thrusters with pitch A/B knobs, a powered RCS controller, and data from a 3D joystick. Checklist:"
+---
+
+**If your Approximately Up ship will not pitch, the cause is almost always RCS setup: you need six maneuvering thrusters (two per axis), each knob assigned correctly, a powered RCS controller, and a data link from a 3D joystick.** Check routing before you rebuild the frame.
+
+## The minimum RCS setup
+
+Rotation in Approximately Up comes from dedicated RCS thrusters, not your main lifting engines. The confirmed working configuration is six RCS thrusters plus one RCS controller.
+
+Each axis needs **two opposing jets**. For pitch specifically, one thruster knob must be set to pitch A and the opposing one to pitch B — if both are set to A, or neither is assigned to pitch, the ship cannot rotate on that axis.
+
+## How the controller connects
+
+The RCS controller pairs with the thrusters **wirelessly** — you do not cable each thruster individually. You only wire power to the controller and run data from a 3D joystick.
+
+This means two classic failure points: the controller has no power branch from your router, or the joystick data cable never reaches the controller. Both produce exactly the symptom of dead pitch thrusters.
+
+## Power and indicator lights
+
+Watch the RCS controller's indicator lights during testing:
+
+- **Green** — continue, the system is fine
+- **Yellow** — plan sparing use, power is marginal
+- **Red or blinking** — replace the thruster at the next garage stop, or adapt with main engines only
+
+Starving the RCS controller mid-pitch is a confirmed way to lose attitude control. Give the controller its own small power branch so thruster load cannot cut it off.
+
+## If it still does not work
+
+Press **Mouse 3** to reset any stuck joystick before assuming hardware failure — a jammed stick can block new inputs. Then verify in garage mode with **H** debug info that every link shows connected.
+
+Also check that no axis is running on a single thruster. Depleted or missing opposing jets cause asymmetric rotation that feels like dead pitch. Fix the wiring and knob assignment first; the frame is almost never the problem.

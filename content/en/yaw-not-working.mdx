@@ -1,0 +1,36 @@
+---
+title: "Approximately Up Yaw Not Working"
+badge: "Fix"
+subtitle: "Yaw failures come from knob assignment, controller power, or single-sided jets."
+metaTitle: "Approximately Up Yaw Not Working — RCS Fixes That Help"
+metaDescription: "Approximately Up yaw not working? Assign two opposing thrusters to yaw A/B, power the RCS controller, and link a 3D joystick. Diagnose asymmetric rotation here."
+---
+
+**Yaw problems in Approximately Up are RCS problems: an axis without two opposing thrusters, or knobs that were never set to yaw A and yaw B, will not rotate the ship.** The fix is in the setup, not the airframe.
+
+## Why yaw specifically fails
+
+The RCS system needs six maneuvering thrusters — two per axis. Each thruster has a knob assigning it to pitch A/B, yaw A/B, or roll A/B, and yaw only works when both of its jets exist and oppose each other.
+
+The common mistake is cloning thrusters with **C** and never changing the copied knob. You end up with four jets on pitch and none on yaw, and the ship spins fine on two axes but ignores the third.
+
+## The controller chain
+
+RCS thrusters pair with the RCS controller wirelessly, so the wiring list is short: power to the controller from your router, and data from a 3D joystick to the controller.
+
+If yaw dies while pitch and roll still work, the knobs are the prime suspect. If everything rotational is dead, suspect controller power or the joystick data link instead.
+
+## Asymmetric yaw mid-flight
+
+Depleted or failed RCS on one side of an axis causes asymmetric rotation — the ship yaws one direction but barely responds in the other. During long flights, watch the controller indicator lights: green means continue, yellow means use sparingly, and red or blinking means replace that thruster at the next garage stop.
+
+Plan RCS battery life for the whole trip on longer flights. Running one yaw jet dry mid-coast leaves you fighting lopsided rotation for the rest of the journey.
+
+## Quick diagnostic order
+
+1. Press **Mouse 3** to reset stuck joysticks — rules out jammed input
+2. Open garage mode with **G** and check **H** debug info for disconnected links
+3. Verify two thrusters exist for yaw and their knobs read yaw A and yaw B
+4. Confirm the RCS controller has its own power branch from the router
+
+Most yaw failures are solved at step 3. Rebuilding the frame is almost never necessary.

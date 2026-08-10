@@ -1,0 +1,38 @@
+---
+title: "Approximately Up Velocity Meter"
+badge: "Systems"
+subtitle: "The sensor behind hands-free hover: PD controllers and automatic altitude hold."
+metaTitle: "Approximately Up Velocity Meter — Hover Logic Setup"
+metaDescription: "The Approximately Up velocity meter powers hover logic: a PD controller of velocity meter, accumulator, remapper, and multiplier holds altitude automatically."
+---
+
+**The velocity meter is the confirmed sensor that makes hands-free hovering possible in Approximately Up.** Combined with an accumulator, remapper, and multiplier, it forms a PD controller that holds your ship's altitude automatically — no lever babysitting required.
+
+## What the velocity meter does
+
+The velocity meter measures how fast your ship is moving — critically, its vertical velocity. On its own it is just an instrument; its power comes from feeding that signal into logic blocks.
+
+For stable hover without touching the throttle, the confirmed tutorial build wires the velocity meter into a small logic circuit that adjusts thrust continuously. The ship then holds altitude by itself.
+
+## The hover logic circuit
+
+The confirmed component stack for the hover PD controller is four parts:
+
+- **Velocity meter** — senses climb/sink rate
+- **Accumulator** — the integral-style memory of the controller
+- **Remapper** — scales the sensor signal into a usable range
+- **Multiplier** — applies gain before driving the thrusters
+
+Together they form a PD (proportional-derivative) controller: the ship corrects small altitude drifts before you even notice them.
+
+## Tuning with the Thrust Calculator
+
+Hover logic pairs with the in-game Thrust Calculator. The calculator compares total thrust against total mass, which tells you whether your thrusters can even hold the ship up before you tune the circuit.
+
+Under-thrusted ships hover at full lever and still sink; over-thrusted ships bounce. Tune thrust-to-mass first, then let the logic handle the fine corrections.
+
+## When to build it
+
+Hover logic matters most once you fly longer missions — lunar approaches, cargo deliveries, and anywhere you need steady low-altitude flight. On the Moon, atmospheric thrusters handle the low-and-slow band, and hover logic keeps the descent calm.
+
+For your very first ship, manual throttle is enough. Add the velocity meter circuit as your second-stage upgrade, after basic RCS rotation is working.

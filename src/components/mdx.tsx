@@ -1,41 +1,51 @@
 import Image from "next/image";
-import type { ReactNode } from "react";
+import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
 /* ---------- Section headings & paragraphs ---------- */
 
-export function H2({ children }: { children: ReactNode }) {
-  return <h2 className="section-title mb-6">{children}</h2>;
-}
-
-export function P({ children }: { children: ReactNode }) {
+export function H2({ children, className = "", ...props }: ComponentPropsWithoutRef<"h2">) {
   return (
-    <p className="text-gray-300 leading-relaxed mb-6 last:mb-0">{children}</p>
+    <h2 className={`section-title mb-6 ${className}`.trim()} {...props}>
+      {children}
+    </h2>
   );
 }
 
-export function Strong({ children }: { children: ReactNode }) {
-  return <strong className="text-white">{children}</strong>;
+export function P({ children, className = "", ...props }: ComponentPropsWithoutRef<"p">) {
+  return (
+    <p className={`text-gray-300 leading-relaxed mb-6 last:mb-0 ${className}`.trim()} {...props}>
+      {children}
+    </p>
+  );
 }
 
-export function H3({ children }: { children: ReactNode }) {
+export function Strong({ children, className = "", ...props }: ComponentPropsWithoutRef<"strong">) {
   return (
-    <h3 className="text-white font-display font-semibold text-xl mb-3">
+    <strong className={`text-white ${className}`.trim()} {...props}>
+      {children}
+    </strong>
+  );
+}
+
+export function H3({ children, className = "", ...props }: ComponentPropsWithoutRef<"h3">) {
+  return (
+    <h3 className={`text-white font-display font-semibold text-xl mb-3 ${className}`.trim()} {...props}>
       {children}
     </h3>
   );
 }
 
-export function Ul({ children }: { children: ReactNode }) {
+export function Ul({ children, className = "", ...props }: ComponentPropsWithoutRef<"ul">) {
   return (
-    <ul className="text-gray-400 text-sm space-y-1.5 list-disc list-inside mb-6 leading-relaxed">
+    <ul className={`text-gray-400 text-sm space-y-1.5 list-disc list-inside mb-6 leading-relaxed ${className}`.trim()} {...props}>
       {children}
     </ul>
   );
 }
 
-export function Ol({ children }: { children: ReactNode }) {
+export function Ol({ children, className = "", ...props }: ComponentPropsWithoutRef<"ol">) {
   return (
-    <ol className="text-gray-400 text-sm space-y-1.5 list-decimal list-inside mb-6 leading-relaxed">
+    <ol className={`text-gray-400 text-sm space-y-1.5 list-decimal list-inside mb-6 leading-relaxed ${className}`.trim()} {...props}>
       {children}
     </ol>
   );
@@ -44,16 +54,16 @@ export function Ol({ children }: { children: ReactNode }) {
 export function A({
   href,
   children,
-}: {
-  href?: string;
-  children: ReactNode;
-}) {
+  className = "",
+  ...props
+}: ComponentPropsWithoutRef<"a">) {
   return (
     <a
       href={href}
-      className="text-brand-theme hover:underline"
+      className={`text-brand-theme hover:underline ${className}`.trim()}
       target={href?.startsWith("http") ? "_blank" : undefined}
       rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
+      {...props}
     >
       {children}
     </a>
@@ -233,38 +243,38 @@ export function RolesCard({
 
 /* ---------- Table ---------- */
 
-export function Table({ children }: { children: ReactNode }) {
+export function Table({ children, className = "", ...props }: ComponentPropsWithoutRef<"table">) {
   return (
     <div className="overflow-x-auto mb-6">
-      <table className="w-full border-collapse rounded-xl overflow-hidden border border-white/10 bg-brand-card text-sm">
+      <table className={`w-full border-collapse rounded-xl overflow-hidden border border-white/10 bg-brand-card text-sm ${className}`.trim()} {...props}>
         {children}
       </table>
     </div>
   );
 }
 
-export function Thead({ children }: { children: ReactNode }) {
-  return <thead className="bg-brand-surface">{children}</thead>;
+export function Thead({ children, className = "", ...props }: ComponentPropsWithoutRef<"thead">) {
+  return <thead className={`bg-brand-surface ${className}`.trim()} {...props}>{children}</thead>;
 }
 
-export function Tbody({ children }: { children: ReactNode }) {
-  return <tbody>{children}</tbody>;
+export function Tbody({ children, className = "", ...props }: ComponentPropsWithoutRef<"tbody">) {
+  return <tbody className={className.trim()} {...props}>{children}</tbody>;
 }
 
-export function Tr({ children }: { children: ReactNode }) {
-  return <tr className="border-b border-white/10 last:border-0">{children}</tr>;
+export function Tr({ children, className = "", ...props }: ComponentPropsWithoutRef<"tr">) {
+  return <tr className={`border-b border-white/10 last:border-0 ${className}`.trim()} {...props}>{children}</tr>;
 }
 
-export function Th({ children }: { children: ReactNode }) {
+export function Th({ children, className = "", ...props }: ComponentPropsWithoutRef<"th">) {
   return (
-    <th className="text-left text-white font-semibold py-3 px-4">
+    <th className={`text-left text-white font-semibold py-3 px-4 ${className}`.trim()} {...props}>
       {children}
     </th>
   );
 }
 
-export function Td({ children }: { children: ReactNode }) {
-  return <td className="py-3 px-4 text-gray-300">{children}</td>;
+export function Td({ children, className = "", ...props }: ComponentPropsWithoutRef<"td">) {
+  return <td className={`py-3 px-4 text-gray-300 ${className}`.trim()} {...props}>{children}</td>;
 }
 
 export function RiskBadge({ level }: { level: string }) {

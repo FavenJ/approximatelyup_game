@@ -22,6 +22,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
+    metadataBase: new URL("https://www.approximatelyup.space"),
     title: {
       default: t("siteTitle"),
       template: `%s | ${t("siteName")}`,

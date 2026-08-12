@@ -7,6 +7,8 @@ import Script from "next/script";
 import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { AdBannerSlot } from "@/components/AdBanner";
+import { adsterra } from "@/config/ads";
 import "../globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -70,7 +72,11 @@ export default async function LocaleLayout({
         )}
         <NextIntlClientProvider messages={messages}>
           <Header />
+          {/* 顶部 Banner（728x90 横幅）。仅在 .env.local 中启用且填好代码后显示 */}
+          <AdBannerSlot slot={adsterra.banner} label="Advertisement" />
           {children}
+          {/* 底部 Native Banner（原生信息流广告） */}
+          <AdBannerSlot slot={adsterra.native} label="Sponsored" />
           <Footer />
         </NextIntlClientProvider>
       </body>

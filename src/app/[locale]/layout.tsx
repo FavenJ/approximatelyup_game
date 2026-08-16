@@ -8,6 +8,7 @@ import { routing } from "@/i18n/routing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { AdBannerSlot } from "@/components/AdBanner";
+import { ResponsiveAdBanner } from "@/components/ResponsiveAdBanner";
 import { adsterra } from "@/config/ads";
 import "../globals.css";
 
@@ -72,12 +73,32 @@ export default async function LocaleLayout({
         )}
         <NextIntlClientProvider messages={messages}>
           <Header />
-          {/* 顶部 Banner（728x90 横幅）。仅在 .env.local 中启用且填好代码后显示 */}
-          <AdBannerSlot slot={adsterra.banner} label="Advertisement" />
+          {/* 顶部 Banner：桌面 728x90 / 移动 320x50 自适应，只挂载对应的一套脚本 */}
+          <ResponsiveAdBanner
+            desktop={adsterra.banner}
+            mobile={adsterra.bannerMobile}
+            label="Advertisement"
+          />
           {children}
           {/* 底部 Native Banner（原生信息流广告） */}
           <AdBannerSlot slot={adsterra.native} label="Sponsored" />
           <Footer />
+          {/* Smartlink 智能链接：渲染为低调的「Sponsored」链接（非脚本） */}
+          {adsterra.smartlink.enabled && adsterra.smartlink.src && (
+            <div className="flex justify-center pb-6">
+              <a
+                href={adsterra.smartlink.src}
+                target="_blank"
+                rel="nofollow noopener"
+                className="text-[11px] uppercase tracking-widest text-white/30 transition-colors hover:text-white/50"
+              >
+                Sponsored
+              </a>
+            </div>
+          )}
+          {/* 站点级脚本型广告：未配置（enabled=false）时自动不渲染 */}
+          <AdBannerSlot slot={adsterra.popunder} scriptId="adsterra-popunder" />
+          <AdBannerSlot slot={adsterra.socialBar} scriptId="adsterra-social-bar" />
         </NextIntlClientProvider>
       </body>
     </html>

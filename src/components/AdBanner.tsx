@@ -8,6 +8,8 @@ export type AdSlot = {
   containerId: string;
   src: string;
   inlineScript: string;
+  /** true = 仅加载脚本、不渲染可见容器（Popunder / Social Bar / Smartlink 等） */
+  scriptOnly?: boolean;
 };
 
 /**
@@ -26,19 +28,53 @@ export type AdSlot = {
  *       在容器旁边动态注入两个 <script> 并立即执行。
  *       （不能用 dangerouslySetInnerHTML —— React 不会执行其中的 <script>）
  *
+ *  3) 脚本型（Popunder / Social Bar / Smartlink 等，无可见容器）：
+ *     <script async src="https://.../invoke.js" data-cfasync="false"></script>
+ *     或 <script>atOptions = {...};</script>
+ *     → 设 _SCRIPT_ONLY=true，并填 _SRC 或 _SCRIPT。组件只加载脚本、不渲染任何可见元素。
+ *
  * 未启用（enabled=false）或 src 与 inlineScript 都为空时，组件不渲染任何内容。
  */
 export function AdBannerSlot({
   slot,
   label = "Advertisement",
   className,
+  scriptId,
 }: {
   slot: AdSlot;
   label?: string;
   className?: string;
+  /** 脚本型广告位的唯一 id（内联脚本必需，避免多个脚本型广告位 id 冲突） */
+  scriptId?: string;
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const injected = useRef(false);
+
+  // ── 模式 3：脚本型（Popunder / Social Bar / Smartlink），无可见容器 ──
+  if (slot.scriptOnly) {
+    if (!slot.enabled) return null;
+    if (slot.src) {
+      return (
+        <Script
+          src={slot.src}
+          strategy="afterInteractive"
+          data-cfasync="false"
+        />
+      );
+    }
+    if (slot.inlineScript) {
+      return (
+        <Script
+          id={scriptId ?? `adsterra-${label}`}
+          strategy="afterInteractive"
+          data-cfasync="false"
+        >
+          {slot.inlineScript}
+        </Script>
+      );
+    }
+    return null;
+  }
 
   // ── 模式 2：atOptions + invoke.js（经典 Banner 横幅）───────────────
   // 用 useEffect 在挂载后动态创建 <script> 元素并插入 DOM，
